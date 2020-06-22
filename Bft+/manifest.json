@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "BFT+",
+	"version": "0.1.3",
+	"description": "BFT veritus helper",
+
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": ["https://dienynas.vjg.lt/vvdg/index.php?page=marks&*"],
+			"js": ["avrgCalc.js", "Chart.min.js", "monthChart.js", "chartRender.js", "skipedLessons.js"]
+		}
+	]
+}
